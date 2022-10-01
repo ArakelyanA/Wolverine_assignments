@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-bool endsWith(std::string str, std::string substr)
+bool endsWith(const std::string& str, const std::string& substr)
 {
 	if(substr.size() > str.size())
 		return false;
