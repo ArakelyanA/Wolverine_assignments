@@ -5,5 +5,5 @@ int main()
     int num1, num2, num3;
     std::cout << "Enter the numbers " << std::endl;
     std::cin >> num1 >> num2 >> num3;
-    std::cout << "The mean of these numbers is  " << (num1 + num2 +num3)/3 << std::endl;
+    std::cout << "The mean of these numbers is  " << (num1 + num2 + num3)/3 << std::endl;
 }
