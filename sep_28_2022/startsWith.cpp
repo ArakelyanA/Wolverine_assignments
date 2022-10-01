@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
-bool tartsWith(std::string str,std::string substr)
+bool tartsWith(const std::string& str, const std::string& substr)
 {
 	if(substr.size() > str.size())
 		return false;
-	for(int i = 0; i < substr.size(); i++)
+	for (int i = 0; i < substr.size(); i++)
 	{
           if(str[i] != substr[i])
               return false;
@@ -15,7 +15,7 @@ bool tartsWith(std::string str,std::string substr)
  
 int main()
 {
- std::string str,substr;
+ std::string str, substr;
  std::cout << "Enter the string " << std::endl;
  getline(std::cin, str);
  std::cout << "Enter the substring " << std::endl;
