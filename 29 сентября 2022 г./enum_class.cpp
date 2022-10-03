@@ -26,5 +26,5 @@ std::string mp(Colors c)
 int main()
 { 
   std::cout << mp(Colors::Red) << std::endl;
-  std::cout <<  static_cast<std::underlying_type<Colors>::type>(mp("Black")) << std::endl; 
+  std::cout <<  static_cast<int>::type>(mp("Black")) << std::endl; 
 }
